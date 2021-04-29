@@ -36,6 +36,16 @@ footer {
 
 /* About
 ******************************/
+.about-me .btn {
+    background-color: #E55934 ;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.about-me .btn:hover {
+    background-color: rgba(204, 63, 12, 70%);
+}
 
 
 /* Education

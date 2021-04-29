@@ -1,3 +1,57 @@
+/* Global
+******************************/
+body {
+    color: #343434;
+}
+
 img {
     width: 300px;
 }
+
+header {
+    background-color: #C3BF6D;
+    color:#E55934;
+}
+
+/* Navigation Bar
+******************************/
+.navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar  li {
+    display: inline;
+}
+.navbar {
+    background-color: rgb(56, 197, 110);
+}
+
+/* Footer
+******************************/
+footer {
+    background-color: #33673B;
+}
+
+/* About
+******************************/
+
+
+/* Education
+******************************/
+
+
+/* Experience and Skills
+******************************/
+.skills {
+    background-color: #CE8D66;
+}
+
+.work-history {
+    background-color: #D9594C;
+}
+
+
+/* Index
+******************************/

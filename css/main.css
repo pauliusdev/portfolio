@@ -10,7 +10,7 @@ img {
     width: 300px;
 }
 
-header {
+header .content-structure {
     background-color: #C3BF6D;
     color: #E55934;
 }
@@ -25,10 +25,41 @@ header {
     margin: 0 auto;
 }
 
+footer {
+    background-color: #33673B;
+}
+
+/* footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center; 
+} */
+
+/* Browser Interactions
+******************************/
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar{
+    display: none; /* Chrome, Safari and Opera */
+}
+
 /* Navigation Bar
 ******************************/
+nav {
+    background-color: rgb(56, 197, 110);
+}
+
 .navbar {
-    padding-left: 10px;
+    margin-top: 0;
+
+    padding-left: 0px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -57,9 +88,6 @@ header {
 
 /* Footer
 ******************************/
-footer {
-    background-color: #33673B;
-}
 
 /* About
 ******************************/
@@ -82,15 +110,15 @@ footer {
 
 /* Experience and Skills
 ******************************/
-.it-skills {
+.it-skills .content-structure {
     background-color: #CE8D66;
 }
 
-.personal-skills {
+.personal-skills .content-structure {
     background-color: cornflowerblue;
 }
 
-.work-history {
+.work-history .content-structure {
     background-color: #D9594C;
 }
 
@@ -98,5 +126,5 @@ footer {
 /* Index
 ******************************/
 .index {
-    
+
 }

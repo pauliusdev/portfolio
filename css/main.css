@@ -1,9 +1,19 @@
 /* Global
 ******************************/
+
+/* p,h1,h2,h3,li {
+    padding:15px;
+}
+ */
+
 body {
     color: #343434;
     margin:0;
     padding:0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
@@ -27,6 +37,7 @@ header .content-structure {
 
 footer {
     background-color: #33673B;
+    color:white;
 }
 
 /* footer {
@@ -59,6 +70,8 @@ nav {
 .navbar {
     margin-top: 0;
 
+    position:relative;
+
     padding-left: 0px;
     padding-right: 10px;
     padding-top: 10px;
@@ -83,7 +96,15 @@ nav {
     color: rgb(56, 197, 110);
 }
 .navbar li:hover {
-    background-color:pink;
+    background-color: pink;
+}
+
+.navbar .profile-picture {
+    position: absolute;
+    left: -120px;
+    top: 10px;
+    border:solid white 3px;
+    border-radius: 20px;
 }
 
 /* Footer
@@ -100,6 +121,11 @@ nav {
 }
 .about-me a:hover {
     background-color: rgba(204, 63, 12, 70%);
+}
+
+
+.profile-picture {
+    width:50px;
 }
 
 /* Education

@@ -1,11 +1,10 @@
+@font-face {
+    font-family: "Freckle Face";
+    src: url(fonts/Freckle_Face/FreckleFace-Regular.ttf); /*Relative path*/
+}
+
 /* Global
 ******************************/
-
-/* p,h1,h2,h3,li {
-    padding:15px;
-}
- */
-
 body {
     color: #343434;
     margin:0;
@@ -14,10 +13,17 @@ body {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.25;
 }
 
 img {
     width: 300px;
+    
+}
+
+header {
+    font-family: 'Freckle Face', sans-serif;
+    text-align: center;
 }
 
 header .content-structure {
@@ -39,16 +45,6 @@ footer {
     background-color: #33673B;
     color:white;
 }
-
-/* footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center; 
-} */
 
 /* Browser Interactions
 ******************************/
@@ -104,7 +100,7 @@ nav {
     left: -120px;
     top: 10px;
     border:solid white 3px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 /* Footer

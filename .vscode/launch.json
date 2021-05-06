@@ -7,8 +7,8 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open about.html",
-            "file": "c:\\Users\\Paulius\\Desktop\\portfolio\\about.html"
+            "name": "Open experience_and_skills.html",
+            "file": "c:\\Users\\Paulius\\Desktop\\portfolio\\experience_and_skills.html"
         }
     ]
 }

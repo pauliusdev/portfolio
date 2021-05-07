@@ -1,7 +1,10 @@
+/* Fonts
+******************************/
 @font-face {
     font-family: "Freckle Face";
     src: url(fonts/Freckle_Face/FreckleFace-Regular.ttf); /*Relative path*/
 }
+
 /* Global
 ******************************/
 body {
@@ -20,12 +23,14 @@ img {
     width: 300px;
 }
 
+
+/* Header
+******************************/
 header {
     font-family: 'Freckle Face', sans-serif;
     text-align: center;
 
 }
-
 header h1 {
     margin-top:0;
 }
@@ -33,17 +38,6 @@ header h1 {
 header .flex-item {
     background-color: #C3BF6D;
     color: #E55934;
-}
-
-.content-structure {
-    width: 1100px;
-    margin: 0 auto;
-}
-
-
-footer {
-    background-color: #33673B;
-    color:white;
 }
 
 /* Browser Interactions
@@ -61,54 +55,93 @@ body::-webkit-scrollbar{
 ******************************/
 nav {
     background-color: rgb(56, 197, 110);
-
 }
 
 .navbar {
     background-color: rgb(56, 197, 110);
 }
+
 .navbar {
-    margin-top: 0;
+    display:flex;
+    margin: 0;
+    flex-wrap: wrap;
 
     position:relative;
 
     padding-left: 0px;
     padding-right: 10px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom:10px;
+}
 
+.navbar li .no-padding {
+    padding:0px;
 }
 
 .navbar  li {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: inline;
 }
 
 .navbar a {
     color:white;
 }
+
 .navbar a:hover {
     color: rgb(56, 197, 110);
 }
+
 .navbar li:hover {
     background-color: pink;
 }
 
-.navbar .profile-picture {
-    position: absolute;
-    left: -100px;
-    top: 10px;
+.navbar-logo {
+    display:flex;
+    width:50px;
     border:solid white 3px;
     border-radius: 5px;
 }
 
+nav .flex-container {
+    margin:0px;
+    align-items: baseline;
+    
+}
+
+.flex-item-nav {
+    margin:0 auto;
+    min-width: 320px;
+    max-width: 1100px;
+    width:100%;
+}
+
 /* Footer
 ******************************/
+footer {
+    background-color: rgb(56, 197, 110);
+    color:white;
+    width:100%;
+}
 
-/* About
+footer li {
+    list-style-type: none;
+}
+
+.flex-item-footer {
+    margin:0 auto;
+    min-width: 320px;
+    max-width: 1100px;
+    width:100%;
+}
+
+footer .flex-container {
+    margin:0;
+}
+
+/* About - Link button
 ******************************/
 .about-me a {
     background-color: #E55934 ;
@@ -121,19 +154,28 @@ nav {
     background-color: rgba(204, 63, 12, 70%);
 }
 
-
-.profile-picture {
-    width:50px;
-}
-
 /* Education
 ******************************/
-.education {
 
-}
 
 /* Experience and Skills
 ******************************/
+.job-item {
+    display:grid;
+    background-color:blanchedalmond;
+    margin:5px;
+    grid-template-columns: 1fr 2fr;
+    column-gap:5px;
+}
+
+.job-details {
+    border:solid blue 1px;
+}
+
+.job-description {
+    border:solid blue 1px;
+}
+
 .it-skills {
     background-color: #CE8D66;
 }
@@ -146,12 +188,9 @@ nav {
     background-color: #D9594C;
 }
 
-
 /* Index
 ******************************/
-.index {
 
-}
 
 /* Flexbox 
 ******************************/
@@ -164,22 +203,14 @@ nav {
 
 .flex-container {
     display: flex;
-    margin: 5px;
+    margin: 7px;
     border:solid blue 2px;
+}
+.flex-container h2 {
+    text-align: center;
 }
 
 .flex-item {
-    flex:1 1 auto;
-}
-
-.flex-item-nav {
-    margin:0 auto;
-    min-width: 320px;
-    max-width: 1100px;
-}
-
-.flex-item-footer {
-    margin:0 auto;
-    min-width: 320px;
-    max-width: 1100px;
+    flex:1 1 400px;
+    margin:2px;
 }

@@ -2,7 +2,7 @@
 ******************************/
 @font-face {
     font-family: "Freckle Face";
-    src: url(fonts/Freckle_Face/FreckleFace-Regular.ttf); /*Relative path*/
+    src: url(fonts/Freckle_Face/FreckleFace-Regular.ttf); /* Relative path */
 }
 
 /* Global
@@ -88,14 +88,18 @@ nav {
     padding-top: 0px;
     padding-bottom: 0px;
     display: inline;
+
 }
 
 .navbar a {
     color: white;
+    text-decoration: none;
+
 }
 
 .navbar a:hover {
     color: rgb(56, 197, 110);
+    text-decoration: underline;
 }
 
 .navbar li:hover {
@@ -163,7 +167,6 @@ footer .flex-container {
 
 /* Education
 ******************************/
-
 /* Experience and Skills
 ******************************/
 .job-item {
@@ -180,16 +183,25 @@ footer .flex-container {
     max-height: 100%;
 }
 
+.flex-item img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
 .study-result {
     grid-template-columns: 2fr 1fr;
+    padding-left: 5px;
 }
 
 .job-details {
     border: solid blue 1px;
+    padding-left: 5px;
 }
 
 .job-description {
     border: solid blue 1px;
+    padding-left: 5px;
 }
 
 .it-skills {
@@ -206,8 +218,6 @@ footer .flex-container {
 
 /* Index
 ******************************/
-
-
 /* Flexbox 
 ******************************/
 .wrapper {

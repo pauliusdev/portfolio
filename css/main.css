@@ -10,17 +10,24 @@
 body {
     color: #343434;
     margin:0;
-    padding:0;
+    padding-bottom: 96px;
     background-color: coral;
+    min-height: 100%;
+    position: relative;
 }
 
+html{
+    height: 100%;
+}
 body {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.25;
 }
 
-img {
-    width: 300px;
+.job-item  img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
 
@@ -124,6 +131,9 @@ footer {
     background-color: rgb(56, 197, 110);
     color:white;
     width:100%;
+    height: 96px;
+    position: absolute;
+    bottom:0px;
 }
 
 footer li {
@@ -168,6 +178,10 @@ footer .flex-container {
     column-gap:5px;
 }
 
+.study-result {
+    grid-template-columns: 2fr 1fr;
+}
+
 .job-details {
     border:solid blue 1px;
 }
@@ -199,6 +213,9 @@ footer .flex-container {
     min-width: 320px;
     max-width: 1100px;
     background-color:chartreuse;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
 }
 
 .flex-container {

@@ -8,44 +8,51 @@
     </head>
 <body>
     <nav>
-        <div class="content-structure">
-            <ul class="navbar">
-                <img class="profile-picture" src="https://cdn.imgbin.com/6/3/1/imgbin-computer-icons-avatar-child-user-profile-blog-childrens-BWctkFwabpPPrK5PiZZEShp64.jpg">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience_and_skills.html">Experience</a></li>
-            </ul>
+        <div class="flex-container">
+            <div class="flex-item-nav">
+                <ul class="navbar">
+                    <li><a><img class="navbar-logo" src="https://cdn.imgbin.com/6/3/1/imgbin-computer-icons-avatar-child-user-profile-blog-childrens-BWctkFwabpPPrK5PiZZEShp64.jpg"></a></li>
+                    <li class="no-padding"><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience_and_skills.html">Experience</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <header>
-        <div class="content-structure">
-            <h1>About Me header area</h1>
-            <p>Header Area</p>
-        </div>
-    </header>
+    <div class="wrapper">
+        <header class="flex-container">
+            <div class="flex-item">
+                <h1>About Me header area</h1>
+                <p>Header Area</p>
+            </div>
+        </header>
 
-    <section class="about-me">
-        <div class="content-structure">
-            <img src="images/img1.jpg">
-            <p>Technology and learning new skills are my passion, it is where I can get creative and develop my ideas.<br>
-                I am very motivated and reliable, I take my work very seriously. I can work either on my own or as a part of the team.<br>
-                I can adapt to any environment and I would use all my skills to contribute positively to any work situation</p>
-            <p>In my spare time, I have been working on a couple of individual projects, specifically using Visual Studio IDE.<br>
-                The main programming language I have used since NC is C#. I have also expanded my interests by doing a little bit of practice of Python and AWS technologies such as VM’s.</p>
-            <a href="https://github.com/pauliusdev/portfolio">My GitHub project area for this website</a>
-        </div>   
-    </section>
-
+        <section class="job-item">
+            <div class="job-details">
+                <img src="images/img1.jpg">
+            </div>
+            <div class="job-description about-me">
+                <p>Technology and learning new skills are my passion, it is where I can get creative and develop my ideas.<br>
+                    I am very motivated and reliable, I take my work very seriously. I can work either on my own or as a part of the team.<br>
+                    I can adapt to any environment and I would use all my skills to contribute positively to any work situation</p>
+                <p>In my spare time, I have been working on a couple of individual projects, specifically using Visual Studio IDE.<br>
+                    The main programming language I have used since NC is C#. I have also expanded my interests by doing a little bit of practice of Python and AWS technologies such as VM’s.</p>
+                <a href="https://github.com/pauliusdev/portfolio">My GitHub project area for this website</a>
+            </div>   
+        </section>
+    </div>
+    
     <footer>
-        <div class="content-structure">
-            <h2>This is my footer</h2>
-            <ul>
-                <li>Contact Phone Number: 00000000000</li>
-                <li>Contact Address: 00000000000</li>
-                <li>Contact Name: 00000000000</li>
-            </ul>
+        <div class="flex-container">
+            <div class="flex-item-footer">
+                <ul>
+                    <li>Contact Phone Number: 00000000000</li>
+                    <li>Contact Address: 00000000000</li>
+                    <li>Contact Name: 00000000000</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

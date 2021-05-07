@@ -8,50 +8,56 @@
     </head>
 <body>
     <nav>
-        <div class="content-structure">
-            <ul class="navbar">
-                <img class="profile-picture" src="https://cdn.imgbin.com/6/3/1/imgbin-computer-icons-avatar-child-user-profile-blog-childrens-BWctkFwabpPPrK5PiZZEShp64.jpg">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience_and_skills.html">Experience</a></li>
-            </ul>
+        <div class="flex-container">
+            <div class="flex-item-nav">
+                <ul class="navbar">
+                    <li><a><img class="navbar-logo" src="https://cdn.imgbin.com/6/3/1/imgbin-computer-icons-avatar-child-user-profile-blog-childrens-BWctkFwabpPPrK5PiZZEShp64.jpg"></a></li>
+                    <li class="no-padding"><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience_and_skills.html">Experience</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
-    <header>
-        <div class="content-structure">
-            <h1>Everything about my Education header area</h1>
-            <p>Header area</p>
-        </div>
-    </header>
 
-    <section class="education">
-        <div class="content-structure">
-            <h2 class="headers2">Education</h2>
-            <ul>
-                <li>Buckinghamshire New University <time datetime="2014-01-10">2014-2017</time></li>
-                    <ul>
-                        <li>High Wycombe Campus,Queen Alexandra Road,High Wycombe,Buckinghamshire HP112JZ</li>
-                        <li>BSC (Hons) Computing– 2:1 </li>
-                    </ul>
-                <li>Boston College <time datetime="2013-01-10">2013-2014</time></li>
-                    <ul>
-                        <li>Skirbeck Road,Boston,Lincolnshire,PE216JF</li>
-                        <li>Education to Higher Degree</li>
-                    </ul>
-            </ul>
-        </div>
-    </section>
+    <div class="wrapper">
+        <header class="flex-container">
+            <div class="flex-item">
+                <h1>Everything about my Education header area</h1>
+                <p>Header area</p>
+            </div>
+        </header>
+
+    
+        <section class="job-item study-result">
+            <div class="job-details">
+                <p>Buckinghamshire New University <time datetime="2014-01-10">2014-2017</time></p>
+                <p>High Wycombe Campus,Queen Alexandra Road,High Wycombe,Buckinghamshire HP112JZ</p>
+            </div>
+            <div class="job-description">
+                <p>BSC (Hons) Computing– 2:1</p>
+            </div>
+
+            <div class="job-details">
+                <p>Boston College <time datetime="2013-01-10">2013-2014</time></p>
+                <p>Skirbeck Road,Boston,Lincolnshire,PE216JF</p>
+            </div>
+            <div class="job-description">
+                <p>Education to Higher Degree</p>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <div class="content-structure">
-            <h2>This is my footer</h2>
-            <ul>
-                <li>Contact Phone Number: 00000000000</li>
-                <li>Contact Address: 00000000000</li>
-                <li>Contact Name: 00000000000</li>
-            </ul>
+        <div class="flex-container">
+            <div class="flex-item-footer">
+                <ul>
+                    <li>Contact Phone Number: 00000000000</li>
+                    <li>Contact Address: 00000000000</li>
+                    <li>Contact Name: 00000000000</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

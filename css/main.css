@@ -1,8 +1,8 @@
 /* Fonts
 ******************************/
 @font-face {
-    font-family: "Freckle Face";
-    src: url(fonts/Freckle_Face/FreckleFace-Regular.ttf); /* Relative path */
+    font-family: "Girassol";
+    src: url(fonts/Girassol/Girassol-Regular.ttf); /* Relative path */
 }
 
 /* Global
@@ -13,7 +13,7 @@ body {
     padding-bottom: 96px;
     min-height: 100%;
 
-    background-color: coral;
+    background-color: #FEECEC;
     color: #343434;
 }
 
@@ -22,26 +22,19 @@ body {
     line-height: 1.25;
 }
 
-
 html{
     height: 100%;
 }
 
-
 /* Header
 ******************************/
-header {
-    font-family: 'Freckle Face', sans-serif;
+header, h1, h2 {
+    font-family: 'Girassol', sans-serif;
     text-align: center;
 
 }
 header h1 {
     margin-top: 0;
-}
-
-header .flex-item {
-    background-color: #C3BF6D;
-    color: #E55934;
 }
 
 /* Browser Interactions
@@ -58,11 +51,11 @@ body::-webkit-scrollbar{
 /* Navigation Bar
 ******************************/
 nav {
-    background-color: rgb(56, 197, 110);
+    background-color: #875A70;
 }
 
 .navbar {
-    background-color: rgb(56, 197, 110);
+    background-color: #875A70;
 }
 
 .navbar {
@@ -88,22 +81,25 @@ nav {
     padding-top: 0px;
     padding-bottom: 0px;
     display: inline;
-
 }
 
 .navbar a {
     color: white;
+    font-weight: bold;
     text-decoration: none;
-
 }
 
 .navbar a:hover {
-    color: rgb(56, 197, 110);
     text-decoration: underline;
+    text-decoration-color: #875A70;
 }
 
 .navbar li:hover {
-    background-color: pink;
+    background-color: #C6A9B7;
+    border-radius: 3px;
+}
+.navbar .nav-img-hover:hover {
+    background-color: transparent;
 }
 
 .navbar-logo {
@@ -116,7 +112,6 @@ nav {
 nav .flex-container {
     margin: 0px;
     align-items: baseline;
-    
 }
 
 .flex-item-nav {
@@ -126,10 +121,11 @@ nav .flex-container {
     width: 100%;
 }
 
+
 /* Footer
 ******************************/
 footer {
-    background-color: rgb(56, 197, 110);
+    background-color: #875A70;
     color: white;
     width: 100%;
     height: 96px;
@@ -152,17 +148,24 @@ footer .flex-container {
     margin: 0;
 }
 
-/* About - Link button
+/* About
 ******************************/
 .about-me a {
-    background-color: #E55934 ;
+    background-color: #875A70 ;
     color: white;
     padding: 6px;
     border-radius: 5px;
     text-decoration: none;
 }
 .about-me a:hover {
-    background-color: rgba(204, 63, 12, 70%);
+    background-color: #B691A3;
+}
+
+.image-about-me {
+    background-image: url(../images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Education
@@ -171,7 +174,7 @@ footer .flex-container {
 ******************************/
 .job-item {
     display: grid;
-    background-color: blanchedalmond;
+    background-color: #DBD3D1;
     margin: 5px;
     grid-template-columns: 1fr 2fr;
     column-gap: 5px;
@@ -195,25 +198,25 @@ footer .flex-container {
 }
 
 .job-details {
-    border: solid blue 1px;
+    border: solid black 2px;
     padding-left: 5px;
 }
 
 .job-description {
-    border: solid blue 1px;
+    border: solid black 2px;
     padding-left: 5px;
 }
 
 .it-skills {
-    background-color: #CE8D66;
+    background-color: #DBD3D1;
 }
 
 .personal-skills {
-    background-color: cornflowerblue;
+    background-color: #DBD3D1;
 }
 
 .work-history {
-    background-color: #D9594C;
+    background-color: #DBD3D1;
 }
 
 /* Index
@@ -224,16 +227,20 @@ footer .flex-container {
     margin: 0 auto;
     min-width: 320px;
     max-width: 1100px;
-    background-color: chartreuse;
+    background-color: #C6A9B7;
     height: auto;
     min-height: 100%;
     overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border: solid black 2px;
 }
 
 .flex-container {
     display: flex;
     margin: 7px;
-    border: solid blue 2px;
+    border: solid black 2px;
 }
 .flex-container h2 {
     text-align: center;
@@ -242,4 +249,21 @@ footer .flex-container {
 .flex-item {
     flex: 1 1 400px;
     margin: 2px;
+}
+
+/* Media Queries
+******************************/
+@media screen and (max-width: 750px)
+{
+    body {
+        font-size: 12px;
+    }
+
+    .navbar img {
+        width:28px;
+    }
+
+    footer {
+        height: 69px;
+    }
 }

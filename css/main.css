@@ -55,10 +55,6 @@ nav {
 }
 
 .navbar {
-    background-color: #875A70;
-}
-
-.navbar {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -69,6 +65,8 @@ nav {
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    background-color: #875A70;
 }
 
 .navbar li .no-padding {
@@ -76,12 +74,13 @@ nav {
 }
 
 .navbar  li {
+    display: inline;
+
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
-    display: inline;
-}
+}   
 
 .navbar a {
     color: white;
@@ -97,9 +96,17 @@ nav {
 .navbar li:hover {
     background-color: #C6A9B7;
     border-radius: 3px;
+    border:solid white 2px;
 }
+
 .navbar .nav-img-hover:hover {
     background-color: transparent;
+    border:none;
+}
+.navbar .nav-img-hover {
+    background-color: transparent;
+    border:none;
+    padding-left:0;
 }
 
 .navbar-logo {
@@ -137,6 +144,10 @@ footer li {
     list-style-type: none;
 }
 
+footer ul {
+    padding-left:0px;
+}
+
 .flex-item-footer {
     margin: 0 auto;
     min-width: 320px;
@@ -159,6 +170,7 @@ footer .flex-container {
 }
 .about-me a:hover {
     background-color: #B691A3;
+    border:solid white 2px;
 }
 
 .image-about-me {
@@ -180,6 +192,14 @@ footer .flex-container {
     column-gap: 5px;
 }
 
+.education-modules{
+    display: grid;
+    background-color: #DBD3D1;
+    margin: 5px;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
 .job-item  img {
     object-fit: cover;
     width: 100%;
@@ -193,8 +213,9 @@ footer .flex-container {
 }
 
 .study-result {
-    grid-template-columns: 2fr 1fr;
-    padding-left: 5px;
+    /* grid-template-columns: 2fr 1fr; */
+    /* padding-left: 5px; */
+    grid-template-columns: 1fr;
 }
 
 .job-details {
